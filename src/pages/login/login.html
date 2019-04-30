@@ -1,0 +1,24 @@
+<ion-content padding scroll="false" class="bg">
+  <div id="login-form" class="paddingdo">
+    <ion-row >
+      <ion-col text-center>
+        <div text-center>
+          <p>Enter your email <br> and password to login</p>
+        </div>
+        <ion-list>
+          <ion-item>
+            <ion-input class="borderSolid" type="text" placeholder='Email' [(ngModel)]="username"> </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input class="borderSolid" type="password" name="password"  placeholder='password' [(ngModel)]="password"> </ion-input>
+          </ion-item>
+        </ion-list>
+        <div class="myInput">
+          <button ion-button class="button-style" block color="primary" (click)="login()">Login</button>
+        </div>
+        <div text-center>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

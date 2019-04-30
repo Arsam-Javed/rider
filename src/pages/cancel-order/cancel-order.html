@@ -1,0 +1,41 @@
+<ion-content padding="" style="background-color: transparent"  *ngIf="!cancel">
+  <div class="base" >
+
+    <div>
+      <p>Are you sure you want to Cancel Order?
+      </p>
+    </div>
+    <div>
+      <ion-row>
+        <ion-col col-6 (click)="closeModel('yes')">
+          <p>Yes</p>
+
+        </ion-col>
+        <ion-col col-6 (click)="closeModel('no')">
+          <p>No</p>
+
+        </ion-col>
+      </ion-row>
+
+    </div>
+  </div>
+</ion-content>
+<ion-content padding="" *ngIf="cancel">
+  <div class="base" >
+
+    <div>
+      <p style="">Enter the reason for cancellation
+      </p>
+    </div>
+    <div>
+
+      <ion-textarea [(ngModel)]="issue">
+
+      </ion-textarea>
+
+    </div>
+    <div>
+      <p (click)="submit()"><b>Submit </b></p>
+    </div>
+  </div>
+</ion-content>

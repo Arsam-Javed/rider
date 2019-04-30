@@ -1,0 +1,9 @@
+page-open-dispute {
+  .dullbg {
+    background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url(../assets/images/background.png) !important;
+  }
+  .header-md::after{
+    height:0px !important;
+  }
+
+}

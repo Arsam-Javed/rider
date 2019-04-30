@@ -1,0 +1,47 @@
+<ion-header class="bg" style="height: 70px;color: white">
+  <ion-row *ngIf="loaded">
+    <ion-col col-6>
+      <p style="margin-left:16px;font-size:larger">Orders no.<br><b>{{c_order.order.ordernumber}}</b></p>
+    </ion-col>
+    <ion-col col-5>
+      <h6>In Progress</h6>
+    </ion-col>
+    <ion-col col-1>
+      <img  src="assets/images/dot-red.png">
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content class="bg" style="background: #B8D1D5;">
+      <div  style="width: 100%; height: 100%" id="map" #map>
+
+      </div>
+</ion-content>
+
+<ion-footer>
+  <div class="location">
+
+    <ion-row>
+      <ion-col col-1>
+        <img  src="assets/images/location-black.png" style="margin-top: 15px;">
+      </ion-col>
+      <ion-col col-11>
+        <b>Location</b>
+        <br>
+        <i *ngIf="nomap">
+          {{"Manual Location: "+ manualaddress}}
+        </i>
+        <i *ngIf="!nomap">
+          {{manualaddress}}
+        </i>
+
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div>
+    <div>
+      <button ion-button class="button-style" block   color="blue" (click)="gotoOrder()"> Go to Order</button>
+    </div>
+  </div>
+</ion-footer>

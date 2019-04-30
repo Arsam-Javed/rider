@@ -1,0 +1,88 @@
+$font-path: "../assets/fonts";
+$app-direction: ltr;
+@import "ionic.globals";
+
+$text-color:        #fff;
+$background-color:  transparent;
+
+.bg{
+  background-image: url('../assets/images/background.png');
+  background-repeat:no-repeat;
+  background-size: cover;
+  overflow-scrolling-y: true;
+
+}
+
+.bg-onBoarding{
+  background-image: url('../assets/images/background.png');
+  background-size: cover;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  overflow-scrolling-y: true;
+
+}
+.full-screen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+$colors: (
+  primary:    #00688E,
+  secondary:  #57A8C3,
+  danger:    	#F85302,
+  light:      #A8DFE2,
+  dark:       #B0DBE3,
+  lightblue:  #57A8C3,
+  darkgrey:#2E7D82,
+  lightgrey: #56A3B7,
+ cancel:#f9180d,
+        call:#22ad33,
+  blue:	#0157A0
+);
+
+ion-header {
+  background-color: #2E7D82;
+  .toolbar-title {
+    color: #2E7D82;
+    font-weight: 300;
+    font-size: large;
+  }
+}
+
+$inputStyle: (
+
+  width: 100%,
+  height: 100px,
+  -moz-border-radius: 50px,
+  -webkit-border-radius: 50px,
+  border-radius: 10px,
+  margin-bottom: 10px,
+
+);
+
+.picker-md .picker-wrapper{
+  background: white !important;
+}
+.picker-opt{
+  color: lightblue !important;
+}
+.picker-opt-selected {
+  color: #4192D4 !important;
+}
+
+@import "ionic.theme.default";
+@import "ionic.ionicons";
+@import "roboto";
+@import "noto-sans";

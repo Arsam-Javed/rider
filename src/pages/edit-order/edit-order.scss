@@ -1,0 +1,98 @@
+page-edit-order {
+  .dullbg {
+    background: linear-gradient( rgba(20,20,20, .6), rgba(20,20,20, .6)), url(../assets/images/background.png) !important;
+  }
+  .header-md::after{
+    height:0px !important;
+  }
+  .label-md {
+    margin: 0px 0px 0px 0px;
+  }
+  .item-md{
+    padding-left:0px;
+  }
+  .user-img{
+    height:25px;
+    margin-top:10px;
+    margin-right: 16px
+  }
+  .location{
+    height:90px;
+    color:white;
+    margin-left:-15px;
+    margin-right:-15px;
+    background-image: url('../assets/images/location-shade.png');
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow-scrolling-y: true;
+  }
+  .icons{
+    height:90px;
+    width: 90px;
+    margin-top: 5px;
+  }
+  .address-col{
+    margin-top:13px;
+    font-size: large;
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    height: 1px;
+    width: 15em;
+    height: 1.2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+  }
+  .header-div
+  {
+    border-bottom:1px solid white;
+    height: 50px;
+    margin-left:16px;
+    //margin-top:16px ;
+    margin-right: 16px;
+  }
+  .img-set{
+    width:30px;
+    float:left;
+  }
+  .basket-img{
+    height:150px;
+    width:150px;
+  }
+  .text-set{
+    text-align: center;
+  }
+  .basket{
+    margin-top:10%
+  }
+  .scroll-main-div{
+    height:400px;
+    background-color: white;
+  }
+  .scroll-heading-div{
+    color: black;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .scroll-div{
+    height: 200px;
+    width:100%;
+  }
+
+
+  //************media queries*************************
+  @media screen and (min-width: 390px) {
+    .img-set{
+      width:50px;
+      float: left;
+    }
+    .text-set{
+      width:170px;
+    }
+
+  }
+
+
+}

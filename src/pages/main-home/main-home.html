@@ -1,0 +1,52 @@
+<ion-content padding scroll="false" class="bg">
+  <div>
+    <div>
+        <p>HOME</p>
+    </div>
+    <div>
+        <div (click)="openriderdetails()">
+          <img class="user-img" src="assets/images/user.png" >
+        </div>
+        <div>
+          <p>{{name}}</p>
+        </div>
+        <div (click)="logout()">
+          <img class="user-img" src="assets/images/logout.png" >
+        </div>
+    </div>
+  </div>
+  <div class="myInput">
+    <button ion-button class="button-style" block color="danger" (click)="current_order()">Current Order in Progress </button>
+  </div>
+  <div (click)="pickupOrder()" *ngIf="loaded">
+    <div style="text-align: center; padding-top: 8px">
+      <p>Pick an Order</p>
+    </div>
+    <div>
+        <div style="display: inline-block;">
+          <img class="basket-img"  src="assets/images/pick-order.png" >
+          <div *ngIf="orderstopick > 0"><p>{{orderstopick}}</p></div>
+        </div>
+    </div>
+  </div>
+  <div (click)="deliverOrder()" *ngIf="loaded">
+    <div>
+      <p>Deliver an Order</p>
+    </div>
+    <div>
+      <div>
+        <div>
+          <img class="basket-img"  src="assets/images/deliver-order.png" >
+          <div *ngIf="orderstodeliver > 0"><p>{{orderstodeliver}}</p></div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+</ion-content>
+
+
+
+
+
+

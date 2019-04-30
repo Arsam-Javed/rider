@@ -1,0 +1,32 @@
+<ion-header class="bg" style="height: 70px;" [class.dullbg]="modelOpen" [style.color]="modelOpen ? '#749493' : 'white'">
+  <div>
+    <p>Open a dispute</p>
+  </div>
+</ion-header>
+<ion-content padding scroll="false" class="bg" [class.dullbg]="modelOpen">
+  <div [style.opacity]="modelOpen ? '0.4' : ''">
+    <div class="myInput">
+      <button ion-button class="button-style" block color="cancel" (click)="cancelOrder()"> Cancel Order</button>
+    </div>
+  <div class="myInput">
+    <button ion-button class="button-style" block color="primary" (click)="paymetIssues()"> Payment Issue</button>
+  </div>
+  <div class="myInput">
+    <button ion-button class="button-style" block color="primary" (click)="technicalIssues()">Technical Issue </button>
+  </div>
+  <div class="myInput">
+    <button ion-button class="button-style" block color="primary" (click)="damageIssues()"> Damage Issue</button>
+  </div>
+  <div>
+  <div class="myInput">
+    <button ion-button class="button-style" block color="call" (click)="callbase()">Call Base </button>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+</ion-content>
+
